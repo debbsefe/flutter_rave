@@ -335,7 +335,7 @@ class _AddDebitCardWidget extends StatefulWidget {
 }
 
 class __AddDebitCardWidgetState extends State<_AddDebitCardWidget> {
-  TextEditingController _creditCardNumberController = TextEditingController();
+  // TextEditingController _creditCardNumberController = TextEditingController();
   TextEditingController _creditCardExpirationController =
       TextEditingController();
   TextEditingController _cvvController = TextEditingController();
@@ -438,7 +438,7 @@ class __AddDebitCardWidgetState extends State<_AddDebitCardWidget> {
 
   @override
   void dispose() {
-    _creditCardNumberController.dispose();
+    // _creditCardNumberController.dispose();
     _creditCardExpirationController.dispose();
     _cvvController.dispose();
     _cardCvvFocusNode.dispose();
@@ -479,7 +479,7 @@ class __AddDebitCardWidgetState extends State<_AddDebitCardWidget> {
                             fontSize: 20),
                       ),
                       subtitle: Padding(
-                        padding: const EdgeInsets.only(top:10),
+                        padding: const EdgeInsets.only(top: 10),
                         child: Text(
                           "You will be charged ${widget.isDollar ? dollarSymbol : nairaSymbol}${widget.amount}",
                           style: Theme.of(context).textTheme.subtitle1.copyWith(
@@ -505,7 +505,7 @@ class __AddDebitCardWidgetState extends State<_AddDebitCardWidget> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(bottom: 10.0, top:20),
+            padding: const EdgeInsets.only(bottom: 10.0, top: 20),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -522,7 +522,7 @@ class __AddDebitCardWidgetState extends State<_AddDebitCardWidget> {
                 ),
                 TextField(
                   focusNode: _cardNumerFocusNode,
-                  controller: _creditCardNumberController,
+                  // controller: _creditCardNumberController,
                   onChanged: _onCardNumberChanged,
                   keyboardType: TextInputType.number,
                   textInputAction: TextInputAction.next,

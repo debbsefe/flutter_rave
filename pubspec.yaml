@@ -1,8 +1,8 @@
 name: flutter_rave
 description: Flutterwave's Rave Card Processing Plugin. Completely supports Android and iOS.
 version: 1.0.0
-author: Ogbonda Chiziaruhoma
-homepage: https://github.com/zfinix/flutter_rave
+author: Mamus Eferha
+homepage: https://github.com/debbsefe/flutter_rave
 
 environment:
   sdk: ">=2.5.2 <3.0.0"
